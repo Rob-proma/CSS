@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.7px Arial; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{{ all_content_blocks['global-css-21'].render }}</span></p>
+<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="https://use.typekit.net/xie8ewv.css"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;link rel="stylesheet" href="https://use.typekit.net/xie8ewv.css"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="https://code.jquery.com/jquery-3.6.0.js"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">  window.dataLayer = window.dataLayer || [];</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- Google Tag Manager --&gt;</span></p>
+<p class="p1"><span class="s1">&lt;script&gt;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':</span></p>
+<p class="p1"><span class="s1">new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],</span></p>
+<p class="p1"><span class="s1">j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=</span></p>
+<p class="p1"><span class="s1">'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);</span></p>
+<p class="p1"><span class="s1">})(window,document,'script','dataLayer','GTM-5G9CCM4');&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;!-- End Google Tag Manager --&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% assign storeCode = current_store.code %}</span></p>
+<p class="p1"><span class="s1">{% if storeCode == "grace-cosmetics-au" or storeCode == "grace-cosmetics-nz" or storeCode == "grace-cosmetics-na" or storeCode == "grace-cosmetics-png" %}</span></p>
+<p class="p1"><span class="s1">  {{ all_content_blocks['global-css-grace'].render }}</span></p>
+<p class="p1"><span class="s1">  &lt;link rel="icon" type="image/ico" href="https://res.cloudinary.com/hirviubsa/image/upload/v1616980650/media/graceIconSQ.svg"&gt;</span></p>
+<p class="p1"><span class="s1">{% else %}</span></p>
+<p class="p1"><span class="s1">  &lt;link rel="icon" type="image/ico" href="https://res.cloudinary.com/hirviubsa/image/upload/v1616979960/media/globe-solid.svg"&gt;</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">&lt;!-- tidy up Articles for Customers--&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">  {% if current_account.ambassador? %}</span></p>
+<p class="p1"><span class="s1">  {% else %}</span></p>
+<p class="p1"><span class="s1">    .SC-ArticleCategory h1 { display:none; }</span></p>
+<p class="p1"><span class="s1">    .SC-ArticleCategory .SC-Grid_sidebar { display:none; }</span></p>
+<p class="p1"><span class="s1">  {% endif %}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">{% if current_store.path == blank %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% elsif current_store.path == 'NZ' %}</span></p>
+<p class="p1"><span class="s1">  form .SC-Grid .u-one-whole.u-s-pe-medium.u-s-ps-base .u-s-mb-small.u-font-size-medium {display: none;}</span></p>
+<p class="p1"><span class="s1">{% elsif current_store.path == 'NA' %}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">{% elsif current_store.path == 'PG' %}</span></p>
+<p class="p1"><span class="s1">  form .SC-Grid  .SC-Grid_main .u-s-me-medium .u-one-whole.u-s-pe-medium.u-s-ps-base {display: none;}</span></p>
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script src="https://kit.fontawesome.com/1831c19739.js" crossorigin="anonymous"&gt;&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script type="text/javascript"&gt;</span></p>
+<p class="p1"><span class="s1">  document.addEventListener("DOMContentLoaded", function() {  </span></p>
+<p class="p1"><span class="s1">    const startKitBonus = document.getElementById('SC-product-grace-cosmetics-bonus-start-kit');</span></p>
+<p class="p1"><span class="s1">      if(startKitBonus){</span></p>
+<p class="p1"><span class="s1">        const getBundleContent = document.getElementById('rego_pack_list');</span></p>
+<p class="p1"><span class="s1">        const getBundleList = getBundleContent.getElementsByTagName('ul');</span></p>
+<p class="p1"><span class="s1">        const bundleItems = getBundleContent.getElementsByTagName('li');</span></p>
+<p class="p1"><span class="s1">        const start = 9;</span></p>
+<p class="p1"><span class="s1">          while(bundleItems[i] &gt; start) {</span></p>
+<p class="p1"><span class="s1">            bundleItems[i].classList.add("sc-hide");</span></p>
+<p class="p1"><span class="s1">          }</span></p>
+<p class="p1"><span class="s1">        /*for (let i = 0; i &lt; bundleItems.length; i++) {</span></p>
+<p class="p1"><span class="s1">          if(bundleItems[i].indexOf &gt; 10){</span></p>
+<p class="p1"><span class="s1">             bundleItems[i].classList.add("u-hide");</span></p>
+<p class="p1"><span class="s1">          }</span></p>
+<p class="p1"><span class="s1">          console.log(bundleItems[i]);</span></p>
+<p class="p1"><span class="s1">        }*/</span></p>
+<p class="p1"><span class="s1">      }</span></p>
+<p class="p1"><span class="s1">  });</span></p>
+<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+</body>
+</html>
